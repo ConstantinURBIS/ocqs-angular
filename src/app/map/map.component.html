@@ -1,0 +1,12 @@
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <label class="col-form-label" for="Fname">Nom :</label>
+      <input class="form-control mr-sm-3" type="text" name="Fname" [(ngModel)]="name">
+    </div>
+    <div class="col-md-6">
+      <p>Nom : {{name}}</p>
+    </div>
+  </div>
+  <button [disabled]="activateButton()" (click)="resetButton()">effacer</button>
+ </div>
